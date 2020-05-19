@@ -5,4 +5,4 @@ The concept group
 =================================================================
 
 
-Am adaugat site-ul pe git
+Am adaugat site-ul pe git.

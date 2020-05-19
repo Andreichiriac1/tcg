@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>The concept group</title>    
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">  
+        <!-- Plugins CSS -->
+        <link href="css/plugins/plugins.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet"><link href="css/main.css" rel="stylesheet">
+        <style>
+            .team-card-default{
+                position: relative;
+                padding-bottom: 2vh;
+            }
+            .team-card-default:hover .imgTeam img{
+                animation: bg .5s ease-out forwards;
+            }
+            .team-card-default .imgTeam{
+                height: 250px;
+                background-color: rgb(98, 178, 184);
+            }
+            .team-card-default .imgTeam img{
+                opacity: .4;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            @keyframes bg {
+                0%{
+                   opacity: .4;
+                }
+                100%{
+                  opacity: 1;
+                }
+            }
+            .team-card-default::before{
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 0;
+                height: 0;
+                border: 2px solid transparent;
+                z-index: 3;
+            }
+            .team-card-default:hover:before{
+                animation: animate .5s linear forwards;
+            }   
+            @keyframes animate {
+                0%{
+                    width: 0;
+                    height: 0;
+                    border-top-color: #59ceeb;
+                    border-right-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                }
+                50%{
+                    width: 100%;
+                    height: 0;
+                    border-top-color: #59ceeb;
+                    border-right-color: #59ceeb;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                }
+                100%{
+                    width: 100%;
+                    height: 100%;
+                    border-top-color: #59ceeb;
+                    border-right-color: #59ceeb;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                }
+            }
+
+
+
+            .team-card-default::after{
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 0;
+                height: 0;
+                border: 2px solid transparent;
+                z-index: 3;
+            }
+            .team-card-default:hover:after{
+                animation: animate2 .5s linear forwards;
+            }   
+            @keyframes animate2 {
+                0%{
+                    width: 0;
+                    height: 0;
+                    border-top-color: transparent;
+                    border-right-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: #59ceeb;
+                }
+                50%{
+                    width: 0;
+                    height: 100%;
+                    border-top-color: transparent;
+                    border-right-color: transparent;
+                    border-bottom-color: #59ceeb;
+                    border-left-color: #59ceeb;
+                }
+                100%{
+                    width: 100%;
+                    height: 100%;
+                    border-top-color: transparent;
+                    border-right-color: transparent;
+                    border-bottom-color: #59ceeb;
+                    border-left-color: #59ceeb;
+                }
+            }
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-darget=".navbar-seconday">
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+
+        <!-- Pushy Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-transparent bg-faded nav-sticky">
+            <!--  -->
+
+            <!--  -->
+            <div class="container">
+                <!--  -->
+
+                <!--  -->
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--  -->
+
+                <!--  -->
+                <a class="navbar-brand" href="index.php">
+                    <br>
+                </a>
+                <!--  -->
+
+                <!--  -->
+                <div  id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="index.php">Home</a>
+                        </li>
+                        <!--  -->
+
+                        <!--  -->
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">About</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="aboutUs.php" class="dropdown-item ">About Us</a></li>
+                                <li><a href="our-team.php" class="dropdown-item active" >Our Team</a></li>
+                                <li><a href="our-values.php" class="dropdown-item">Our Values</a></li>
+                                <li><a href="faqs.php" class="dropdown-item">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">SERVICES</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="services-overview.php" class="dropdown-item">Overview</a></li>
+                                <li><a href="sales-management.php" class="dropdown-item">Sales Management</a></li>
+                                <li><a href="sales-training.php" class="dropdown-item">Sales Training</a></li>
+                                <li><a href="sales-outsourcing.php" class="dropdown-item">Sales Outsourcing</a></li>
+                                <li><a href="marketing.php" class="dropdown-item">Marketing</a></li>
+                                <li><a href="consultancy.php" class="dropdown-item">Consultancy</a></li>
+                                <li><a href="investment.php" class="dropdown-item">Investment</a></li> 
+                                <li><a href="market-studies.php" class="dropdown-item">Market Studies</a></li> 
+                                <li><a href="pr.php" class="dropdown-item">PR</a></li> 
+                                <li><a href="social-media.php" class="dropdown-item">Social Media</a></li> 
+                            </ul>
+                        </li>
+                        <!--  -->
+
+
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">PORTFOLIO</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="our-customer.php" class="dropdown-item">OUR CUSTOMERS</a></li>
+                                <li><a href="portfolio.php" class="dropdown-item">PORTFOLIO</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+
+
+                        <!--  -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="news.php">NEWS</a>
+                        </li>
+                        <!--  -->
+
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">LEARNING CENTER</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="on-sale.php" class="dropdown-item">On Sales</a></li>
+                                <li><a href="podcast.php" class="dropdown-item">Podcast</a></li>
+                                <li><a href="events.php" class="dropdown-item">Events</a></li>
+                                <li><a href="vlog.php" class="dropdown-item">Vlog</a></li>
+                                
+                            </ul>
+                        </li>
+                        <!--  -->
+
+                        <!--  -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">COMPANIES</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="https://theconcept.ro" class="dropdown-item">THE CONCEPT</a></li>
+                                <li><a href="https://heritage-properties.ro" class="dropdown-item">HERITAGE-PROPERTIES</a></li>
+                                <li><a href="https://rexperia.com" class="dropdown-item">REXPERIA</a></li>
+                            </ul>
+                        </li>
+                        <!--  -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.php">Contact</a>
+                        </li>
+
+                       
+                    </ul>        
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="page-titles-img title-space-lg bg-parallax parallax-overlay" data-jarallax='{"speed": 0.2}' style='background-image: url("img/teamBg.jpg")'>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-8 ml-auto mr-auto">
+                        <h1 style="font-size: 2.8rem" class='text-uppercase'>Our team</h1>
+                        <p class="h4">Technology doesn’t start revolutions. Our people do.</p>
+                     </div>
+                </div>
+            </div>
+        </div><!--page title end-->
+       <div class="container pt40">
+         <p class="text-center h4">Our highly trained team delivers effective Sales <br>
+            and real-world consultancy in sales, management, <br>
+            strategy and pre-development matters.</p>
+            <br>
+        <h2 class="h3">@theconcept</h2>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-facebook">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-linkedin">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-instagram">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-youtube">
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-youtube"></i>
+        </a>
+        <br>
+        <br>
+        
+      
+        
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Alex Stan</h4>
+                                <span>Project Coordinator</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Andreea Mincu</h4>
+                                <span>Project Coordinator</span>                                
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Carmen Alexandrescu</h4>
+                                <span>Sales Associate</span>                                
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Ciprian Gheorghiu</h4>
+                                <span>Office Executive</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Claudia Tudor</h4>
+                                <span>Sales Manager</span>   <br>                             
+                                <span>Central Bucharest</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Daniel Raicu</h4>
+                                <span>Sales Manager</span>    <br>                         
+                                <span>Western Bucharest</span>                          
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Daniel Tudor</h4>
+                                <span>CEO & Founder</span>                                
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Eduard Radu</h4>
+                                <span>Project Coordinator</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Florina Dumitru</h4>
+                                <span>Sales Support</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Gabriela Ghergus</h4>
+                                <span>Office & Financial Coordinator</span>                                
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Ionut Veisa</h4>
+                                <span>Sales Associate</span>                                
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Leonard Lazarescu</h4>
+                                <span>Sales Associate</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Nicusor Milita</h4>
+                                <span>Sales Manager</span>          <br>                       
+                                <span>Northern Bucharest</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Oana Nicolescu</h4>
+                                <span>Sales Associate</span>                                
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Razvan Rizea</h4>
+                                <span>Sales Manager</span>     <br>                            
+                                <span>Investment Assets</span>                                
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Toni Trifu</h4>
+                                <span>Property Leasing Consultant</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+            <h2 class="h3">@heritage-properties</h2>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-facebook">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+        </a>
+        <br>
+            <hr>
+<br>
+
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Carmen Alexandrescu</h4>
+                                <span>Sales Associate</span>                       
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Leonard Lazarescu</h4>
+                                <span>Sales Associate</span>                                
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Oana Nicolescu</h4>
+                                <span>Sales Associate</span>   
+                                                              
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Razvan Rizea</h4>
+                                <span>Sales Manager</span>      <br>                          
+                                <span>Central High-End</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Nicusor Milita</h4>
+                                <span>Branch Manager</span>          <br>                       
+                                <span>Heritage Properties</span>                                
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+
+            <h2 class="h3">@rexperia</h2>
+        <a href="#" class="social-icon-sm si-gray si-gray-round si-facebook">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+        </a>
+        <br>
+            <hr>
+            <br>
+
+            <div class="row pb60">
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Cristian Creanga</h4>
+                                <span>Operations</span>                       
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+                <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Daniel Tudor</h4>
+                                <span>Vision</span>                                
+                               
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Razvan Dinca</h4>
+                                <span>Connections</span>   
+                                                              
+                                
+                        </div>
+                    </div>
+                </div><!--/col-->
+                 <div class="col-lg-3 col-md-6  mb30">
+                    <div class="team-card-default">
+                        <div class="imgTeam">
+                          <img src="img/team4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="team-default-content text-center pt30">
+                                <h4 class="mb0 text-uppercase">Vlad Niculescu</h4>
+                                <span>Technical</span> 
+                                                              
+                              
+                        </div>
+                    </div>
+                </div><!--/col-->
+            </div>
+
+        
+        </div>
+        <footer class="footer footer-dark pt50 pb30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6  ml-auto mr-auto text-center">
+                        <ul class="social-icons list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>Facebook
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>twitter
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>instagram
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-behance"></i>Behance
+                                </a>
+                            </li>
+                        </ul>
+                        <h4><i class="fa fa-phone"></i> 1800-355-4322</h4>
+                        <h4><i class="fa fa-envelope"></i> support@assan.com</h4>
+                        <p>&copy; Copyright 2018. Assan 3.0</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--back to top-->
+        <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="js/plugins/plugins.js"></script> 
+        <script src="js/assan.custom.js"></script> 
+</body></html>
+<?php
+include 'modal.php';
+?>

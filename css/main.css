@@ -1,0 +1,19 @@
+body{
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+.h-text{
+    width: 60%;
+    letter-spacing: 1px;
+    margin: 0px auto;
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Fjalla One', sans-serif !important;
+    letter-spacing: 2px;
+}
+p, span, a{
+    font-family: 'Libre Franklin', sans-serif !important;
+
+}
